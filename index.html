@@ -466,6 +466,20 @@
                 (aRect.left + paddingLeft > (bRect.left + bRect.width))
             );
         }
+         if (document.readyState === "complete" || document.readyState === "interactive") {
+        setTimeout(Init, 1);
+    } else {
+        document.addEventListener("DOMContentLoaded", Init);
+    }
+
+    // Add event listener for touchstart
+    document.addEventListener("touchstart", HandleTouchStart);
+
+    // ... (your existing functions)
+
+    function HandleTouchStart() {
+        Saltar();
+    }
         function ReiniciarJuego() {
             // Clear remaining interactables and nubes
             interactuables.forEach(function (element) {
