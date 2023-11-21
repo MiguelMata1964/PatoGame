@@ -1,8 +1,8 @@
 {
     "name": "Duck",
     "short_name": "Duck",
-    "theme_color": "#2196f3",
-    "background_color": "#2196f3",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
     "display": "fullscreen",
     "orientation": "portrait",
     "scope": "./",
